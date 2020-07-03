@@ -11,6 +11,8 @@
     <h4>{{ count}}</h4>
     <button @click="incrementCounter()">Press Me</button>
 
+    <h4>Added analytics</h4>
+
   </div>
 </template>
 

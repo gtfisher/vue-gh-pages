@@ -1,5 +1,7 @@
 import Vue from 'vue';
 import VueRouter, { RouteConfig } from 'vue-router';
+
+import Analytics from 'vue-analytics';
 import Home from '../views/Home.vue';
 
 Vue.use(VueRouter);
@@ -24,6 +26,11 @@ const router = new VueRouter({
   mode: 'history',
   base: process.env.BASE_URL,
   routes,
+});
+
+Vue.use(Analytics, {
+  id: 'UA-171520444-1',
+  router,
 });
 
 export default router;
