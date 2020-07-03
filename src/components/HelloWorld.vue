@@ -1,6 +1,8 @@
 <template>
   <div class="hello">
     <hr>
+
+    <h1>Vue Dummy APP</h1>
     <h1>{{ msg }}</h1>
     <h1>{{ firstName }}</h1>
     <h1>{{ lastName }}</h1>
