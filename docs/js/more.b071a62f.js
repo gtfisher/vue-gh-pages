@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["more"],{"5dde":function(t,e,o){"use strict";o.r(e);var r=function(){var t=this,e=t.$createElement,o=t._self._c||e;return o("div",{staticClass:"more"},[o("router-link",{attrs:{to:"/about"}},[t._v("About")]),t._v(" "),o("router-link",{attrs:{to:"/"}},[t._v("Home")]),o("h1",[t._v("This is the more page")])],1)},n=[],s=o("2877"),a={},u=Object(s["a"])(a,r,n,!1,null,null,null);e["default"]=u.exports}}]);
+//# sourceMappingURL=more.b071a62f.js.map
