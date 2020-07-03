@@ -12,7 +12,7 @@
     <button @click="incrementCounter()">Increment</button>
     <button @click="decrementCounter()">Decrement</button>
 
-    <h4>Updated analytics</h4>
+    <h4>analytics V0.1 (with events)</h4>
 
   </div>
 </template>
