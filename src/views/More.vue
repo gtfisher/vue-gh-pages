@@ -1,7 +1,7 @@
 <template>
   <div class="about">
-    <router-link to="/more">More</router-link>
+    <router-link to="/about">About</router-link>
     <router-link to="/">Home</router-link>
-    <h1>This is an about page</h1>
+    <h1>This is the more page</h1>
   </div>
 </template>
