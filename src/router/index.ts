@@ -31,6 +31,9 @@ const router = new VueRouter({
 Vue.use(Analytics, {
   id: 'UA-171520444-1',
   router,
+  autoTracking: {
+    screenview: true
+  },
 });
 
 export default router;

@@ -9,9 +9,10 @@
     <h1>{{ fullName }}</h1>
     <hr>
     <h4>{{ count}}</h4>
-    <button @click="incrementCounter()">Press Me</button>
+    <button @click="incrementCounter()">Increment</button>
+    <button @click="decrementCounter()">Decrement</button>
 
-    <h4>Added analytics</h4>
+    <h4>Updated analytics</h4>
 
   </div>
 </template>
@@ -31,7 +32,17 @@ export default class HelloWorld extends Vue {
   }
 
   protected incrementCounter() {
+    this.$ga.event({
+      eventCategory: 'click',
+      eventAction: 'increment',
+      eventLabel: 'add one',
+      eventValue: 1
+    })
     this.count++;
+  }
+
+   protected decrementCounter() {
+    this.count--;
   }
 
 }
