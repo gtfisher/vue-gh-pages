@@ -12,7 +12,7 @@
     <button @click="incrementCounter()">Increment</button>
     <button @click="decrementCounter()">Decrement</button>
 
-    <h4>analytics V0.1 (with events)</h4>
+    <h4>analytics V0.2 (added created)</h4>
 
   </div>
 </template>
@@ -22,6 +22,14 @@ import { Component, Prop, Vue } from 'vue-property-decorator';
 
 @Component
 export default class HelloWorld extends Vue {
+
+  public created() {
+    console.log("Hello created");
+    this.$ga.page(this.$router)
+
+  }
+
+
   @Prop() private msg!: string;
   private firstName: string = 'Grant';
   private lastName: string = 'TF';
