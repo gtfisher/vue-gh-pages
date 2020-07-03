@@ -13,6 +13,7 @@
     <button @click="decrementCounter()">Decrement</button>
 
     <h4>analytics V0.3 (moved router)</h4>
+    <h4>analytics V0.4 (auto track)</h4>
 
   </div>
 </template>
@@ -23,15 +24,7 @@ import { Component, Prop, Vue } from 'vue-property-decorator';
 @Component
 export default class HelloWorld extends Vue {
 
-  public created() {
-    console.log("Hello created");
-    this.$ga.page({
-    page: '/',
-    title: 'Home page',
-    location: window.location.href
-    })
 
-  }
 
 
   @Prop() private msg!: string;
@@ -54,6 +47,12 @@ export default class HelloWorld extends Vue {
   }
 
    protected decrementCounter() {
+     this.$ga.event({
+      eventCategory: 'click',
+      eventAction: 'decrement',
+      eventLabel: 'subtract one',
+      eventValue: 1
+    })
     this.count--;
   }
 
