@@ -1,6 +1,7 @@
 <template>
   <div class="home">
     <router-link to="/about">About</router-link>
+    <br>
     <router-link to="/more">More</router-link>
     <img alt="Vue logo" src="../assets/logo.png">
     <HelloWorld msg="Vue (Vue.js) Dummy App on GH-PAGES  App"/>
