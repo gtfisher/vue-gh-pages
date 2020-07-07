@@ -11,10 +11,18 @@ const routes: RouteConfig[] = [
     path: '/',
     name: 'Home',
     component: Home,
+    meta: {
+      auth: false,
+      title: 'DemoHome'
+    }
   },
   {
     path: '/about',
     name: 'About',
+    meta: {
+      auth: false,
+      title: 'About'
+    },
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
@@ -23,6 +31,10 @@ const routes: RouteConfig[] = [
   {
     path: '/more',
     name: 'More',
+    meta: {
+      auth: false,
+      title: 'More'
+    },
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
