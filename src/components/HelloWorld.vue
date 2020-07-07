@@ -15,6 +15,7 @@
     <h4>analytics V0.3 (moved router)</h4>
     <h4>analytics V0.4 (auto track)</h4>
     <h4>analytics V0.5 (added more)</h4>
+    <h4>analytics V0.6 (added page titles)</h4>
 
   </div>
 </template>
